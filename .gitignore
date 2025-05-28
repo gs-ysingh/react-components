@@ -1,0 +1,43 @@
+# Ignore node_modules in all subprojects
+**/node_modules/
+
+# Ignore build and dist folders in all components
+**/build/
+**/dist/
+
+# Ignore environment files in all components
+**/.env
+**/.env.*.local
+**/*.local
+
+# Ignore test coverage
+**/coverage/
+
+# Ignore logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# IDE/editor-specific files
+**/.vscode/
+**/.idea/
+**/*.sublime-project
+**/*.sublime-workspace
+
+# macOS & Windows system files
+**/.DS_Store
+**/Thumbs.db
+**/Desktop.ini
+**/ehthumbs.db
+
+# Yarn, PNPM, and PnP
+**/.yarn/cache
+**/.pnp.*
+**/.pnpjs
+
+# TypeScript
+**/*.tsbuildinfo
+
+# Optional: build output from docs or tools
+**/docs-out/
