@@ -18,11 +18,50 @@ const SimpleFormExample: React.FC = () => {
       placeholder: 'Enter your email',
     },
     {
-      name: 'message',
-      label: 'Message',
-      type: 'textarea',
+      name: 'password',
+      label: 'Password',
+      type: 'password',
       required: true,
-      placeholder: 'Type your message',
+      placeholder: 'Enter your password',
+    },
+    {
+      name: 'age',
+      label: 'Age',
+      type: 'number',
+      required: true,
+      placeholder: 'Enter your age',
+    },
+    {
+      name: 'bio',
+      label: 'Bio',
+      type: 'textarea',
+      required: false,
+      placeholder: 'Tell us about yourself',
+    },
+    {
+      name: 'country',
+      label: 'Country',
+      type: 'select',
+      required: true,
+      options: [
+        { value: '', label: 'Select country' },
+        { value: 'us', label: 'United States' },
+        { value: 'ca', label: 'Canada' },
+        { value: 'uk', label: 'United Kingdom' },
+        { value: 'in', label: 'India' },
+      ],
+    },
+    {
+      name: 'subscribe',
+      label: 'Subscribe to newsletter',
+      type: 'checkbox',
+      defaultValue: false,
+    },
+    {
+      name: 'dob',
+      label: 'Date of Birth',
+      type: 'date',
+      required: true,
     },
   ], []);
 
@@ -32,7 +71,7 @@ const SimpleFormExample: React.FC = () => {
 
   return (
     <div style={{ maxWidth: 400, margin: '2rem auto' }}>
-      <h2>Contact Us</h2>
+      <h2>All Input Types Example</h2>
       <Form fields={fields} onSubmit={handleSubmit} submitLabel="Send" />
     </div>
   );
